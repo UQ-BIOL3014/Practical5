@@ -1,0 +1,315 @@
+plotFreq(chr_2_6,0.2,-0.2,chrom=6)
+plotFreq(chr_2_7,0.2,-0.2,chrom=7)
+plotFreq(chr_2_8,0.2,-0.2,chrom=8)
+plotFreq(chr_2_9,0.2,-0.2,chrom=9)
+plotFreq(chr_2_10,0.2,-0.2,chrom=10)
+plotFreq(chr_2_11,0.2,-0.2,chrom=11)
+plotFreq(chr_2_12,0.2,-0.2,chrom=12)
+plotFreq(chr_2_13,0.2,-0.2,chrom=13)
+plotFreq(chr_2_14,0.2,-0.2,chrom=14)
+plotFreq(chr_2_15,0.2,-0.2,chrom=15)
+plotFreq(chr_2_16,0.2,-0.2,chrom=16)
+plotFreq(chr_2_17,0.2,-0.2,chrom=17)
+plotFreq(chr_2_18,0.2,-0.2,chrom=18)
+plotFreq(chr_2_19,0.2,-0.2,chrom=19)
+plotFreq(chr_2_20,0.2,-0.2,chrom=20)
+plotFreq(chr_2_21,0.2,-0.2,chrom=21)
+plotFreq(chr_2_22,0.2,-0.2,chrom=22)
+plotFreq(chr_2_23,0.2,-0.2,chrom=23)
+require(data.table)
+tumor<-fread("/Users/samirlal/Desktop/tumour_LRR.txt")
+tumor[1]
+tumor[,0]
+tumor$SNPs
+tumor$SNPS
+Tumor_LogR<-data.frame(tumour,row.names=tumour$SNPS)
+Tumor_LogR<-data.frame(tumor,row.names=tumor$SNPS)
+heaD(Tumour_LogR)
+head(Tumour_LogR)
+head(Tumor_LogR)
+typeof(tumor)
+Tumor_LogR<-data.frame(tumor)
+head(Tumor_LogR)
+Tumor_LogR[,1]
+row.names(Tumor_LogR)<-tumor_logR[,1]
+row.names(Tumor_LogR)<-Tumor_LogR[,1]
+head(Tumor_LogR)
+Tumor_LogR<-data.frame(tumor,row.names=1)
+head(Tumor_LogR)
+source('http://aroma-project.org/R/install#aroma.affymetrix')
+library(snapCGH)
+datadir <- system.file("testdata", package="snapCGH")
+targets <- readTargets("targets.txt", path=datadir)
+RG1 <- read.maimages(targets$FileName, path=datadir, source = "genepix")
+head(RG1)
+RG1 <- read.clonesinfo("cloneinfo.txt", RG1, path=datadir)
+head(RG1)
+source("/Users/samirlal/Desktop/Norm_input.R")
+source("/Users/samirlal/Desktop/LRR_QC.R")
+ncol(RAW_LR)
+ncol(proc_LR)
+ncol(Proc_LR)
+nrow(Proc_LR)
+head(Proc_LR)
+colnames(Proc_LR)
+objects()
+remove(Leukemia)
+remove(normalized.data)
+remove(result)
+remove(segmented.data)
+library(aCGH);#
+require(data.table)#
+#RAW_LR <- read.table("/Users/samirlal/Desktop/LRR_QC/LRR_raw.txt",header=TRUE,sep="\t");#
+norms<-fread("/Users/samirlal/Desktop/LRR_QC/norm.csv",header=TRUE,sep=",");
+norms<-data.frame(norms)
+clones.info<-cbind(norms[1:3])
+write.table(clones.info,"Clones.txt",sep="\t",quote="F",row.names=FALSE);
+write.table(clones.info,"Clones.txt",sep="\t",quote=F,row.names=FALSE);
+library(oligoClasses)library(VanillaICE)library(crlmm)library(SNPchip)library(IRanges)library(foreach)
+data(cnSetExample, package="crlmm")
+source('http://aroma-project.org/R/install#aroma.affymetrix')
+require(aCGH);#
+L01<-read.table('/Users/samirlal/Desktop/DNAcopy/L01_segm.txt',header=TRUE,sep="\t");#
+L01_obs<-read.table('/Users/samirlal/Desktop/combined/L01_LRR_data.txt',header=TRUE,sep="\t");
+L01<-read.table('/Users/samirlal/Desktop/DNAcopy/L01_segm.txt',header=TRUE,sep="\t");#
+L01_obs<-read.table('/Users/samirlal/Desktop/combined/L01_LRR_data.txt',header=TRUE,sep="\t");
+head(L01)
+length(L01_obs)
+length(L01_obs$L01)
+length(L01$se.mean)
+length(L01$seg.mean)
+L01$num.mark[1]
+L01_obs$L01[0]
+L01$num.mark[0]
+means <- vector(mode = "numeric", length(L01$num.mark))#
+#
+for(i in seq(1,length(L01$num.mark))){#
+	means[i]<-mean(L01_obs$L01[L01$num.mark[i-1]:L01$num.mark[i]])#
+}
+L01$num.mark[1-1]:L01$num.mark[1]]
+L01$num.mark[1-1]:L01$num.mark[1]
+L01$num.mark[0]:L01$num.mark[1]
+length(L01$num.mark[0]:L01$num.mark[1])
+L01$num.mark[0]
+L01$num.mark[1]
+1:5
+L01$num.mark[0]:L01$num.mark[1]
+<numL01$num.mark[0]:L01$num.mark[1]
+num<-L01$num.mark[0]:L01$num.mark[1]
+str(L01$num.mark[0]:L01$num.mark[1])
+1:94
+0:94
+L01_obs$L01[0:94]
+means <- vector(mode = "numeric", length(L01$num.mark))#
+#
+for(i in seq(2,length(L01$num.mark))){#
+	means[1]<-mean(L01_obs$L01[0:94])#
+	means[i]<-mean(L01_obs$L01[L01$num.mark[i-1]:L01$num.mark[i]])#
+}
+length(means)
+means[2]
+means[1]
+means(L01_obs$L01[0:94])
+mean(L01_obs$L01[0:94])
+mean(L01_obs$L01[L01$num.mark[1]:L01$num.mark[2]])
+L01$num.mark[1]
+L01$num.mark[2]
+require(aCGH);
+# Plot observed values (black) and predicted values (red)#
+plot(means,pch=20)#
+points(L01$seg.mean,col="red",pch=20)
+merge.obj<-mergeLevels(means,L01$seg.mean)
+points(merge.obj$vecMerged,col="blue",pch=20)
+cbind(L01[1:4],merge.obj$vecMerged)
+require(aCGH)#
+vecObs <- c(rep(0,40),rep(0.6,15),rep(0,10),rep(-0.4,20),rep(0,15))+rnorm(100,sd=0.2)#
+vecPred <- c(rep(median(vecObs[1:40]),40),rep(median(vecObs[41:55]),15),#
+  rep(median(vecObs[56:65]),10),rep(median(vecObs[66:85]),20),rep(median(vecObs[86:100]),15))
+# Plot observed values (black) and predicted values (red)#
+plot(vecObs,pch=20)#
+points(vecPred,col="red",pch=20)
+merge.obj <- mergeLevels(vecObs,vecPred)#
+#
+# Add merged values to plot#
+points(merge.obj$vecMerged,col="blue",pch=20)
+source("http://bioconductor.org/biocLite.R")#
+biocLite("bladderbatch")
+library(pamr)
+library(sva);#
+library(bladderbatch);#
+data(bladderdata);#
+library(pamr)#
+library(limma)#
+#
+pheno = pData(bladderEset)
+pheno
+edata = exprs(bladderEset)
+head(edata)
+mod = model.matrix(~as.factor(cancer), data=pheno)
+mod0 = model.matrix(~1,data=pheno)
+heaD(mod)
+head(mod)
+pheno
+n.sv = num.sv(edata,mod,method="leek")
+n.sv
+svobj = sva(edata,mod,mod0,n.sv=n.sv)
+pValues = f.pvalue(edata,mod,mod0)
+qValues = p.adjust(pValues,method="BH")
+head(qValues)
+modSv = cbind(mod,svobj$sv)
+mod0Sv = cbind(mod0,svobj$sv)
+pValuesSv = f.pvalue(edata,modSv,mod0Sv)
+qValuesSv = p.adjust(pValuesSv,method="BH")
+fit = lmFit(edata,modSv)
+head(fit)
+pheno$batch
+mod = model.matrix(~as.factor(cancer), data=pheno)
+combat_edata = ComBat(dat=edata, batch=batch, mod=mod, numCovs=NULL, par.prior=TRUE, prior.plots=FALSE)
+batch = pheno$batch
+combat_edata = ComBat(dat=edata, batch=batch, mod=mod, numCovs=NULL, par.prior=TRUE, prior.plots=FALSE)
+pValuesComBat = f.pvalue(combat_edata,mod,mod0)#
+qValuesComBat = p.adjust(pValuesComBat,method="BH")
+n.sv = num.sv(edata,mod,method="leek")#
+svobj = sva(edata,mod,mod0,n.sv=n.sv)
+svobj
+head(mod)
+svobj
+mod0
+svobj$sv
+mod
+ncol(edata)
+edata = exprs(bladderEset)
+ncol(edata)
+head(edata)
+svobj = sva(edata,mod,mod0,n.sv=n.sv)
+head(edata)
+fsv<-fsva(edata,mod,svobj)
+mod
+fsv<-fsva(edata,mod,svobj)
+fsv<-fsva(edata,mod,svobj$sv)
+fsv<-fsva(edata,mod,svobj)
+#phenotypic data of the expression set i.e. batch 1 and batch 2 and subtypes #
+pheno = pData(bladderEset)#
+#
+#expression data #
+edata = exprs(bladderEset)#
+#
+###Create full model matrix    ### the factor we are after is subtype #
+mod = model.matrix(~as.factor(cancer), data=pheno)#
+#
+###create null model matrix  we are not adjusting for any other variables only intercept is included #
+mod0 = model.matrix(~1,data=pheno)#
+#
+###Apply the sva function to estimate batch and other artifacts#
+#
+##num.sv determines the number of factors  #
+ n.sv = num.sv(edata,mod,method="leek")#
+print(n.sv)#
+###Estimate surrogate variables #
+svobj = sva(edata,mod,mod0,n.sv=n.sv)#
+#returns list svobj$sv matrix whose columns are surrogate variables, svobj$pprob.gam is the posterior probability that each gene is associated with the latent variable#
+#pprob.b is the posterior probability that each gene is associated with the variable of interest. #
+## use the f.pvalue function to adjust for surrogate variables#
+#
+modSv = cbind(mod,svobj$sv)#
+mod0Sv = cbind(mod0,svobj$sv)#
+pValuesSv = f.pvalue(edata,modSv,mod0Sv)#
+qValuesSv = p.adjust(pValuesSv,method="BH")#
+#
+fsv<-fsva(edata,mod,svobj)
+fsv<-fsva(edata,mod,sv)
+svobj = sva(edata,mod,mod0)
+fsv<-fsva(edata,mod,svobj)
+mod
+log(3/2)
+log(1/2)
+CN<-read.table("/Users.samirlal/Desktop/CN.txt",header=FALSE,sep="\t")
+CN<-read.table("/Users/samirlal/Desktop/CN.txt",header=FALSE,sep="\t")
+head(CN)
+median(CN$V6)
+sd(CN$V6)
+head(CN)
+library(crlmm)
+source("http://bioconductor.org/biocLite.R")#
+biocLite("crlmm")
+source("/Users/samirlal/Desktop/data.R")
+library(snapCGH)
+vignette("limma")
+vignette(limma)
+L01<-read.table("/Users/samirlal/Desktop/L01.txt",header=TRUE)
+heaD(L01)
+head(L01)
+cel.mean<-1/0.6*(L01$seg.mean-(1-0.6))
+cbind(L01,cel.mean)
+sd(L01$cel.mean)
+sd(cel.mean)
+L01
+cel.mean<-1/0.6*(exp(L01$seg.mean)-(1-0.6))
+cel.mean<-log(cel.mean,2)
+cel.mean<-1/0.6*(exp(L01$seg.mean)-(1-0.6))
+cel.mean<-log(cel.mean)
+cel.mean
+cel.means
+cel.mean
+heaD(L01)
+head(L01)
+sort(L01$seg.mean)
+length(L01$seg.mean)
+102-51
+51+51/2
+51-51/2
+segmean<-sort(L01$seg.mean)
+sd(segmean[26:77])
+2*sd
+std<-sd(segmean[26:77])
+2*std
+std
+4*std
+median(L01$seg.mean)
+6*std
+5*std
+library(GenomicRanges)#
+gr <- GRanges(seqnames="chr1", ranges=IRanges(seq(1,1000, len=100),#
+width=10))
+gr
+source("http://bioconductor.org/biocLite.R");biocLite("OmicCircos")
+library(crlmm)
+library(snow)
+library(doSNOW)
+library(CNSet)
+library(Copynumber)
+library(copynumber)
+data(logR)
+data(BAF)
+plotAllele(logR,BAF,sample=1,chrom=c(1),layout=c(2,2))
+plotAllele(logR,BAF,sample=1,chrom=c(1:4),layout=c(2,2))
+nrow(logR)
+logR
+fishers
+fisher.test(c(0,0,250993,244670))
+fisher.test(c(0,0,250993,244670),alternative = "less")
+challenge.df = matrix(c(0,0,250993,244670), nrow = 2)
+challenge.df
+challenge.df = matrix(c(0,250993,0,244670), nrow = 2)
+challenge.df
+fisher.test(challenge.df,alternative = "less")
+log(0,2)
+def <-read.table("/Users/samirlal/Desktop/sam/raw_counts.txt",sep="\t",header=TRUE)
+head(def)
+def$t1<-ifelse(def$t1>0,round(def$t1+runif(1,0,50)),def$t1)
+def$t10<-ifelse(def$t10>0,round(def$t10+runif(1,0,50)),def$t10)
+write.table(def,"raw_counts_rep1.txt",quote=F,sep="\t",col.names=TRUE,row.names=TRUE)
+def <-read.table("/Users/samirlal/Desktop/sam/raw_counts.txt",sep="\t",header=TRUE)
+def$t10<-ifelse(def$t10>0,round(def$t10+runif(1,-50,50)),def$t10)
+def$t1<-ifelse(def$t1>0,round(def$t1+runif(1,-50,50)),def$t1)
+write.table(def,"raw_counts_rep1.txt",quote=F,sep="\t",col.names=TRUE,row.names=TRUE)
+def <-read.table("/Users/samirlal/Desktop/sam/raw_counts.txt",sep="\t",header=TRUE)
+def$t1<-ifelse(def$t1,round(def$t1+runif(1,-10,10)),def$t1)
+def$t10<-ifelse(def$t10,round(def$t10+runif(1,-10,10)),def$t10)
+write.table(def,"raw_counts_rep1.txt",quote=F,sep="\t",col.names=TRUE,row.names=TRUE)
+def <-read.table("/Users/samirlal/Desktop/sam/raw_counts.txt",sep="\t",header=TRUE)
+def$t1<-ifelse(def$t1,round(def$t1+runif(1,-5,5)),def$t1)
+def$t10<-ifelse(def$t10,round(def$t10+runif(1,-5,5)),def$t10)
+write.table(def,"raw_counts_rep1.txt",quote=F,sep="\t",col.names=TRUE,row.names=TRUE)
+library(edgeR)
+??cpm
